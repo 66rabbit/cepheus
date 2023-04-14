@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .father {
+        height: 250px;
+        width: 250px;
+        background-color: pink;
+        margin: 250px;
+    }
+    .button{
+        margin-top: 10px;
+    }
+</style>
+<body>
+    <div class="father"></div>
+    <button>点击我获取位置信息</button>
+    <script>
+        let box = document.querySelector('.father');
+        let btn = document.querySelector('button');
+        btn.addEventListener('click', function() {
+            console.log(box.offsetTop);
+            
+        })
+    </script>
+</body>
+</html>
